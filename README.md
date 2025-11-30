@@ -1,12 +1,12 @@
 # MCP RAG Agent
 
-A production-ready Retrieval-Augmented Generation (RAG) agent built with the Model Context Protocol (MCP), LangChain, MongoDB Atlas Vector Search, and OpenAI. This project demonstrates how to build a grounded, policy-aware chatbot that answers questions strictly based on retrieved document context.
+Production-ready RAG system combining LangGraph agent with Model Context Protocol (MCP) integration. Features semantic search via MongoDB Atlas Vector Search, grounded responses using COSTAR prompting, and automated RAGAS-based evaluation for building reliable, context-aware AI agents.
 
 ## Overview
 
 The MCP RAG Agent is a sophisticated question-answering system that:
 - Uses semantic search to find relevant documents from a policy corpus
-- Employs a LangGraph ReAct agent to reason about and retrieve information
+- Employs a LangGraph agent to reason about and retrieve information
 - Integrates via the Model Context Protocol (MCP) for modular, reusable components
 - Ensures grounded responses using the COSTAR prompting framework
 - Stores and retrieves documents using MongoDB Atlas Vector Search
@@ -24,44 +24,13 @@ The MCP RAG Agent is a sophisticated question-answering system that:
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    User Query                               │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ↓
-┌─────────────────────────────────────────────────────────────┐
-│                 LangChain ReAct Agent                       │
-│  • Analyzes query                                           │
-│  • Decides which tools to use                               │
-│  • Formulates grounded response                             │
-└────────────────────────┬────────────────────────────────────┘
-                         │ Uses MCP Tools
-                         ↓
-┌─────────────────────────────────────────────────────────────┐
-│                    MCP Server (stdio)                       │
-│  Tools:                                                     │
-│  • search_documents(query, top_k) → results                 │
-│  Prompts:                                                   │
-│  • grounded_qa_prompt → ensures factual responses           │
-└────────────────────────┬────────────────────────────────────┘
-                         │ Calls
-                         ↓
-┌─────────────────────────────────────────────────────────────┐
-│                  Semantic Search Module                     │
-│  • Generates query embeddings                               │
-│  • Performs vector similarity search                        │
-│  • Returns top-k relevant documents                         │
-└────────────────────────┬────────────────────────────────────┘
-                         │ Queries
-                         ↓
-┌─────────────────────────────────────────────────────────────┐
-│              MongoDB Atlas Vector Store                     │
-│  • Stores document embeddings (1536 dimensions)             │
-│  • Vector search index (cosine similarity)                  │
-│  • Efficient approximate nearest neighbor search            │
-└─────────────────────────────────────────────────────────────┘
-```
+![Architecture Diagram](docs/[2025-11-30]Case-MCP-RAG-Agent-Architecture.drawio.png)
+
+The system architecture illustrates two main workflows:
+
+1. **Document Indexing Flow** (Setup Phase): Documents are processed, embedded using OpenAI, and stored in MongoDB Atlas Vector Search with appropriate indexing for efficient retrieval.
+
+2. **Question-Answering Flow** (Runtime): User queries trigger the LangGraph agent, which uses MCP tools to search relevant documents via semantic search, then formulates grounded responses based on retrieved context.
 
 ## Project Structure
 
