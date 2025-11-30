@@ -16,21 +16,26 @@ The MCP RAG Agent is a sophisticated question-answering system that:
 
 - **MCP Integration**: Standardized protocol for tool exposure and agent communication
 - **Semantic Search**: Vector-based document retrieval using OpenAI embeddings
-- **Grounded Responses**: Strict context-based answering with no hallucinations
-- **ReAct Pattern**: Reasoning and acting cycles for intelligent tool usage
 - **MongoDB Atlas**: Scalable vector storage with efficient similarity search
-- **Automated Evaluation**: RAGAS-based metrics for answer quality assessment
+- **Grounded Responses**: Strict context-based answering with no hallucinations
 - **COSTAR Prompting**: Structured prompt design for consistent, high-quality outputs
+- **LangGraph Agent**: Reasoning and acting cycles for intelligent tool usage
+- **Automated Evaluation**: RAGAS-based metrics for answer quality assessment
+
 
 ## Architecture
 
 ![Architecture Diagram](docs/[2025-11-30]Case-MCP-RAG-Agent-Architecture.drawio.png)
 
-The system architecture illustrates two main workflows:
+The system architecture diagram illustrates two main workflows:
 
 1. **Document Indexing Flow** (Setup Phase): Documents are processed, embedded using OpenAI, and stored in MongoDB Atlas Vector Search with appropriate indexing for efficient retrieval.
 
-2. **Question-Answering Flow** (Runtime): User queries trigger the LangGraph agent, which uses MCP tools to search relevant documents via semantic search, then formulates grounded responses based on retrieved context.
+2. **Question-Answering Flow** (Runtime): User queries trigger the LangGraph ReAct agent, which uses MCP tools to search relevant documents via semantic search, then formulates grounded responses based on retrieved context.
+
+Additionally, the system includes a third workflow not shown in the diagram:
+
+3. **Evaluation Flow** (Quality Assurance): The system generates answers for predefined test questions and evaluates them using RAGAS metrics (relevancy, similarity, correctness) to ensure response quality and accuracy.
 
 ## Project Structure
 
