@@ -11,6 +11,8 @@ from ragas import evaluate
 from ragas.metrics import answer_relevancy, answer_similarity, answer_correctness
 from langchain_openai import ChatOpenAI
 
+answer_correctness.weights = [1, 0]  # So, answer_correctness becomes factual_correctness
+
 
 class RAGASEvaluator:
     """Wrapper for RAGAS evaluation metrics."""

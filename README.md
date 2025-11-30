@@ -314,9 +314,9 @@ python evaluation/evaluator.py
 ```
 
 **Metrics computed**:
-- Answer Relevancy
-- Answer Similarity
-- Answer Correctness
+- [Answer Relevancy](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/answer_relevance/)
+- [Answer Similarity](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/semantic_similarity/)
+- [Answer Correctness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/factual_correctness/)
 
 Results are saved to `evaluation/results/` with timestamps.
 
